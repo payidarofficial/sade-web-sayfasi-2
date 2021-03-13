@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Marka İsmi - Ana Sayfa</title>
+
+        <!-- Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Marka İsmi - Official Web Site. Hakkımızda Bilgi Almak İçin Siteyi Ziyaret Edebilirsin." />
+        <meta name="title" content="Marka İsmi" />
+        <meta name="og:site_name" content="Pâyidar" />
+        <meta name="theme-color" content="#4287f5" />
+        <meta name="owner" content="Pâyidar" />
+
+        <!-- Link -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="" />
+    </head>
+    <body>
+        <!-- Head Start -->
+        <div id="head">
+            <h1>Logo</h1>
+            <!-- Linkler -->
+            <a id="hakkinda">Hakkımızda</a>
+            <a href="#">Misyon</a>
+            <a href="#">İletişim</a>
+        </div>  
+            <!-- Paneller Start -->
+            <div id="hakkinda-panel">
+                <h1>Şirketimiz Hakkında</h1>
+                    <p>Şirketimiz Şu Gibi Özelliklere Sahiptir. Şu Avantajları Vardır. Tamamen Veryansın Olarak Çalışmaktayız.</p>
+                    <a id="h-panel-kapat">Kapat</a>
+            </div>
+            <!-- Paneller End -->
+
+        <!-- Head End -->
+
+        <!-- About Start -->
+        <div id="about">
+            <div id="about-container">
+                <h1>Pâyidar</h1>
+                <p>Pâyidar Hakkında</p>
+            </div>
+        </div>
+        <!-- About End -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('#hakkinda').click(function(){
+                    $('#hakkinda-panel').css({
+                        "opacity": "1",
+                        "visibility": "visible",
+                        "position": "fixed",
+                        "bottom": "0",
+                        "left": "0",
+                        "right": "0",
+                        "top": "0",
+                        "transform": "initial"
+                    })
+                })
+            })
+
+            $(document).ready(function(){
+                $('#hakkinda-panel #h-panel-kapat').click(function(){
+                    $('#hakkinda-panel').css({
+                        "opacity": "0",
+                        "visibility": "hidden",
+                        "position": "fixed",
+                        "bottom": "0",
+                        "left": "0",
+                        "right": "0px",
+                        "top": "0",
+                        "transform": "translateY(550px)"
+                    })
+                })
+            })
+        </script>
+    </body>
+</html>
