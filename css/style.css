@@ -1,0 +1,160 @@
+/* 
+    Pâyidar Web Tasarım
+*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap'); /* 'Montserrat' */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap'); /* 'Work Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap'); /* 'Roboto Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* 'Quicksand' */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap'); /* 'Jura', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); /* 'Sacramento', cursive; */
+
+/* Body */
+body{
+    background-color: #18191a;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+/* Head */
+#head{
+    background-color: #262626;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, .5);
+}
+#head h1{
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
+    color: white;
+    float: left;
+    transition: 200ms all;
+}
+#head a{
+    font-family: 'Jura', sans-serif;
+    font-weight: bolder;
+    color: white;
+    float: right;
+    position: relative;
+    top: 35px;
+    font-size: 17px;
+    margin-left: 15px;
+    text-decoration: none;
+    left: -5px;
+    transition: 200ms all;
+}
+#head h1:hover{
+    color: red !important;
+    transform: scale(1.1);
+}
+#head a:hover{
+    color: red !important;
+    transform: scale(1.1);
+    z-index: 999;
+    text-decoration: underline !important;
+    text-decoration-color: red;
+}
+
+/* About */
+#about{
+    padding: 10px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+#about > #about-container{
+    overflow: hidden;
+}
+#about h1{
+    font-family: 'Sacramento', cursive;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    animation: payidar-1 0.8s ease;
+    text-shadow: 1px 2px 10px silver;
+}
+#about p{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    animation: payidar-2 0.8s ease;
+}
+#about span{
+    text-shadow: 1px 2px 5px silver;
+}
+@keyframes payidar-0{
+    0%, 50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes payidar-1{
+    0%, 50%{
+        margin-left: -50px;
+        opacity: 0;
+    }
+    100%{
+        position: initial !important;
+        opacity: 1;
+    }
+}
+@keyframes payidar-2{
+    0%, 50%{
+        margin-left: 50px;
+        opacity: 0;
+    }
+    100%{
+        position: initial !important;
+        opacity: 1;
+    }
+}
+
+/* Content && Container */
+/* #content{
+
+} */
+
+/* Panel */
+#hakkinda-panel{
+    left: 0px;
+    bottom: 0;
+    right: 0px;
+    top: 0;
+    position: fixed;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(550px);
+    background-color: black;
+    transition: 250ms linear all;
+    z-index: 999;
+}
+#hakkinda-panel > h1{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: white;
+}
+#hakkinda-panel > p{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: #ddd;
+}
+#hakkinda-panel > a{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 250ms all;
+    cursor: pointer;
+}
+#hakkinda-panel > a:hover{
+    color: white;
+    background-color: #555;
+}
